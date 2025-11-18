@@ -1,5 +1,5 @@
 # strategy-research-lab
-AI-powered quant research + backtesting system (built by a 20-year-old founder).
+AI-powered quant research + backtesting system.
 
 Strategy Research Lab is my personal project to build the core tools that quant trading teams use — but from scratch and in public.
 It’s a mix of data engineering, machine learning, research automation, and live trading.
