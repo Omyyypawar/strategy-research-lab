@@ -1,4 +1,5 @@
 timestamp,price,action,signal,balance,position,equity
+timestamp,price,action,signal,balance,position,equity
 2025-11-11T22:47:57.923315,103513.25,HOLD,0,1000,0.0,1000.0
 2025-11-11T22:48:28.790494,103500.74,HOLD,0,1000,0.0,1000.0
 2025-11-11T22:49:09.724333,103533.46,HOLD,0,1000,0.0,1000.0
