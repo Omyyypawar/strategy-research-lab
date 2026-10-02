@@ -6,7 +6,7 @@ Saves: data/features_v2.parquet
 import os
 import pandas as pd
 from dotenv import load_dotenv
-from feature_factory_v2 import build_features
+from src.feature_factory_v2 import build_features
 from binance.client import Client
 
 load_dotenv()

@@ -225,7 +225,7 @@ async def main():
     # We assume you have a feature builder that produces same features as training.
     # Import locally to avoid circular import issues (user should have feature_factory_v2)
     try:
-        from feature_factory_v2 import build_features
+        from src.feature_factory_v2 import build_features
     except Exception as e:
         logger.exception("feature builder import failed: %s", e)
         await client.close_connection()

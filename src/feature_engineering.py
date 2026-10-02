@@ -1,13 +1,12 @@
 """
-Phase 2 | Step 1 — Feature Factory V2 (Batch / Backtest)
+Phase 2 | Step 1 — Feature Factory (Legacy / Batch / Backtest)
 Target horizon: 5 minutes (10 samples @ 30s)
 Author: Om | Strategy Research Lab
 
-Design goals:
-- Leakage-safe feature generation (no future data used in features)
-- Features tuned to 5-min prediction horizon
-- Explicit debug/diagnostic outputs for distribution/regime checks
-- Clear API for backtest/train pipelines
+DEPRECATED: This module is superseded by feature_factory_v2.py which provides
+19 microstructure + regime features used in production ML pipeline.
+Kept for backward compatibility with Phase 2 hybrid strategy only.
+Use src.feature_factory_v2.build_features() for all new work.
 """
 
 import numpy as np

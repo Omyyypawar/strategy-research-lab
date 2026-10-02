@@ -12,7 +12,8 @@ import datetime as dt
 import pandas as pd
 from src.indicators import compute_indicators
 from src.visualization import plot_dashboard
-from src.feature_engineering import build_feature_matrix
+from src.feature_factory_v2 import build_features
+from src.feature_engineering import build_feature_matrix  # legacy Phase 2 only
 from src.backtesting import backtest_strategy
 from src.ml_signal_engine import train_ml_model
 

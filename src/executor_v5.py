@@ -22,7 +22,7 @@ from dotenv import load_dotenv
 from binance import AsyncClient, BinanceSocketManager
 
 # feature builder (your repo)
-from feature_factory_v2 import build_features
+from src.feature_factory_v2 import build_features
 
 load_dotenv()
 

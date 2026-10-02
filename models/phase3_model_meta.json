@@ -1,0 +1,31 @@
+{
+    "model_name": "RandomForest_v2",
+    "model_type": "sklearn.ensemble.RandomForestClassifier",
+    "model_file": "models/phase3_rf_v2.pkl",
+    "feature_manifest": "models/features_columns_phase3_v2.json",
+    "trained_on": "data/features_v2.parquet",
+    "target": "binary classification — 5-minute forward return > 0",
+    "target_column": "target",
+    "n_features": 19,
+    "feature_columns": [
+        "open", "high", "low", "close", "volume",
+        "ret_1m", "ret_5m", "vol_short", "vol_long", "vol_regime",
+        "entropy_50", "norm_range_20", "vol_imbalance_20", "vpin_50",
+        "zscore_ret5", "mom1", "mom2", "mom2_smooth", "avg_vol_20"
+    ],
+    "feature_source": "src/feature_factory_v2.py :: build_features()",
+    "hyperparameters": {
+        "n_estimators": 500,
+        "max_depth": 12,
+        "min_samples_leaf": 3,
+        "class_weight": "balanced_subsample",
+        "n_jobs": -1,
+        "random_state": 42
+    },
+    "training_config": {
+        "split_method": "time-series (80/20, no shuffle)",
+        "data_source": "Binance BTCUSDT 1m klines (2000 candles)",
+        "label_creation": "shift(-5) on close price, binary > 0"
+    },
+    "notes": "Model trained via experiment_runner_v2.py. Re-run that script to regenerate this metadata with live accuracy/F1 metrics."
+}

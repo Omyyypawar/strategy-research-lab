@@ -1,0 +1,8 @@
+.env
+.git/
+__pycache__/
+*.pkl
+*.parquet
+*.csv
+.pytest_cache/
+notebooks/

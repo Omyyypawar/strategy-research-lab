@@ -65,11 +65,11 @@ logger = logging.getLogger("executor_v3")
 # Replace / adapt if you have an incremental engine instead.
 # ---------------------------
 try:
-    from feature_factory_v2 import build_features
+    from src.feature_factory_v2 import build_features
 except Exception:
     # fallback to incremental_features if present
     try:
-        from incremental_features import IncrementalFeatureEngine
+        from src.incremental_features import IncrementalFeatureEngine
         INC_ENGINE_AVAILABLE = True
     except Exception:
         INC_ENGINE_AVAILABLE = False

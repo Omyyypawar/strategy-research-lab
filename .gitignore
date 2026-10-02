@@ -205,3 +205,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Project-specific ignores
+*.pkl
+*.parquet
+executor_*_log.csv
+paper_trading_log.csv
+execution_metrics.csv
+data/*.json

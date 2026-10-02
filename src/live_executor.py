@@ -74,7 +74,7 @@ logger = logging.getLogger("live_exec_v4")
 # ----------------------------------------------
 # Feature builder import (assumes feature_factory_v2 exists)
 # ----------------------------------------------
-from feature_factory_v2 import build_features
+from src.feature_factory_v2 import build_features
 
 # ----------------------------------------------
 # Binance helpers
