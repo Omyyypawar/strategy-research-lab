@@ -1,0 +1,21 @@
+[
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "ret_1m",
+    "ret_5m",
+    "vol_short",
+    "vol_long",
+    "vol_regime",
+    "entropy_50",
+    "norm_range_20",
+    "vol_imbalance_20",
+    "vpin_50",
+    "zscore_ret5",
+    "mom1",
+    "mom2",
+    "mom2_smooth",
+    "avg_vol_20"
+]

@@ -1,0 +1,24 @@
+version: "3.9"
+
+volumes:
+  shared-data:
+
+services:
+  executor:
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - shared-data:/app/logs
+    restart: on-failure
+
+  dashboard:
+    build: .
+    command: streamlit run src/live_dashboard.py --server.port=8501
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    volumes:
+      - shared-data:/app/logs
+    restart: on-failure
